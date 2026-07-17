@@ -749,6 +749,14 @@ code {
   font-weight: 700;
 }
 
+.version-source {
+  display: block;
+  margin-top: 4px;
+  color: var(--clay);
+  font-size: 13px;
+  font-weight: 400;
+}
+
 .download-panel a {
   color: var(--clay);
 }

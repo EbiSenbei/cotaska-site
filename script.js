@@ -16,3 +16,21 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
+
+const latestVersion = document.querySelector("#latest-version");
+const latestVersionUrl = "https://pub-d671fdad660b43a8a4b99ede58b7c092.r2.dev/latest/version.json";
+
+if (latestVersion) {
+  fetch(latestVersionUrl)
+    .then((response) => {
+      if (!response.ok) throw new Error(`version.json の取得に失敗しました: ${response.status}`);
+      return response.json();
+    })
+    .then((release) => {
+      if (!release.version) throw new Error("version.json にバージョン情報がありません。");
+      latestVersion.textContent = `v${release.version}`;
+    })
+    .catch(() => {
+      latestVersion.textContent = "取得できませんでした";
+    });
+}
