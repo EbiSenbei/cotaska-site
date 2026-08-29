@@ -2,6 +2,8 @@
 
 Cotaska の公式サイトです。
 
+サイトURL: https://ebisenbei.github.io/cotaska-site/
+
 ## Files
 
 - `index.html`: トップページ
