@@ -7,7 +7,7 @@ Cotaska の公式サイトです。
 ## Files
 
 - `index.html`: トップページ
-- `download.html`: ダウンロードページ
+- `download.html`: GitHub Releasesの最新版インストーラーを案内するダウンロードページ
 - `styles.css`: スタイル
 - `script.js`: ページ内スクロール補助
 - `assets/`: ロゴと favicon

@@ -18,17 +18,26 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 });
 
 const latestVersion = document.querySelector("#latest-version");
-const latestVersionUrl = "https://pub-d671fdad660b43a8a4b99ede58b7c092.r2.dev/latest/version.json";
+const downloadInstaller = document.querySelector("#download-installer");
+const latestVersionUrl = "https://api.github.com/repos/EbiSenbei/cotaska-site/releases/latest";
 
 if (latestVersion) {
   fetch(latestVersionUrl)
     .then((response) => {
-      if (!response.ok) throw new Error(`version.json の取得に失敗しました: ${response.status}`);
+      if (!response.ok) throw new Error(`GitHub Releaseの取得に失敗しました: ${response.status}`);
       return response.json();
     })
     .then((release) => {
-      if (!release.version) throw new Error("version.json にバージョン情報がありません。");
-      latestVersion.textContent = `v${release.version}`;
+      if (!release.tag_name) throw new Error("GitHub Releaseにバージョン情報がありません。");
+      latestVersion.textContent = release.tag_name;
+
+      const installer = Array.isArray(release.assets)
+        ? release.assets.find((asset) => /^Cotaska-.*-win-x64\.exe$/i.test(asset.name || ""))
+        : null;
+      if (downloadInstaller && installer?.browser_download_url) {
+        downloadInstaller.href = installer.browser_download_url;
+        downloadInstaller.textContent = `${release.tag_name} をダウンロード`;
+      }
     })
     .catch(() => {
       latestVersion.textContent = "取得できませんでした";

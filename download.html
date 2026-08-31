@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Cotaska のWindows向けポータブル版をダウンロードできます。ZIPを展開してCotaska.exeを起動すると使い始められます。">
+    <meta name="description" content="CotaskaのWindows向け最新版インストーラーをGitHub Releasesからダウンロードできます。">
     <meta property="og:title" content="Cotaska ダウンロード">
-    <meta property="og:description" content="Cotaska のWindows向けポータブル版をダウンロードできます。">
+    <meta property="og:description" content="CotaskaのWindows向け最新版インストーラーをGitHub Releasesからダウンロードできます。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ebisenbei.github.io/cotaska-site/download.html">
     <meta property="og:image" content="https://ebisenbei.github.io/cotaska-site/assets/ogp.png?v=4">
@@ -13,7 +13,7 @@
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Cotaska ダウンロード">
-    <meta name="twitter:description" content="Cotaska のWindows向けポータブル版をダウンロードできます。">
+    <meta name="twitter:description" content="CotaskaのWindows向け最新版インストーラーをGitHub Releasesからダウンロードできます。">
     <meta name="twitter:image" content="https://ebisenbei.github.io/cotaska-site/assets/ogp.png?v=4">
     <title>Cotaska ダウンロード</title>
     <link rel="icon" href="assets/favicon.ico">
@@ -38,15 +38,15 @@
           <p class="eyebrow">Download</p>
           <h1>Cotaska 最新版</h1>
           <p class="lead">
-            CotaskaのWindows向けポータブル版です。
-            ZIPを展開して Cotaska.exe を起動すると、そのまま使い始められます。
+            CotaskaのWindows向けインストール版です。
+            GitHub Releasesから最新版をダウンロードして、インストーラーを実行してください。
           </p>
           <div class="hero__actions">
-            <a class="button button--primary" href="https://pub-d671fdad660b43a8a4b99ede58b7c092.r2.dev/latest/Cotaska-Portable.zip">
-              Cotaska-Portable.zip
+            <a id="download-installer" class="button button--primary" href="https://github.com/EbiSenbei/cotaska-site/releases/latest">
+              最新版をダウンロード
             </a>
-            <a class="button button--ghost" href="https://pub-d671fdad660b43a8a4b99ede58b7c092.r2.dev/latest/Cotaska-Portable.zip.sha256">
-              SHA256を確認
+            <a class="button button--ghost" href="https://github.com/EbiSenbei/cotaska-site/releases/latest">
+              リリースノートを見る
             </a>
           </div>
         </div>
@@ -59,18 +59,18 @@
             </div>
             <div>
               <dt>形式</dt>
-              <dd>ポータブルZIP</dd>
+              <dd>Windows x64 インストーラー</dd>
             </div>
             <div>
               <dt>最新版情報</dt>
               <dd>
                 <span id="latest-version" aria-live="polite">読み込み中…</span>
-                <a class="version-source" href="https://pub-d671fdad660b43a8a4b99ede58b7c092.r2.dev/latest/version.json">version.json</a>
+                <a class="version-source" href="https://github.com/EbiSenbei/cotaska-site/releases/latest">GitHub Releases</a>
               </dd>
             </div>
             <div>
               <dt>配布元</dt>
-              <dd>Cloudflare R2</dd>
+              <dd>GitHub Releases</dd>
             </div>
           </dl>
         </aside>
@@ -83,16 +83,16 @@
         </div>
         <ol class="steps-list">
           <li>
-            <strong>ZIPをダウンロード</strong>
-            <span>Cotaska-Portable.zip を任意のフォルダに保存します。</span>
+            <strong>インストーラーをダウンロード</strong>
+            <span>最新版の Cotaska Windows x64インストーラーを保存します。</span>
           </li>
           <li>
-            <strong>展開</strong>
-            <span>ZIPを展開し、展開後の Cotaska-Portable フォルダを開きます。</span>
+            <strong>インストール</strong>
+            <span>ダウンロードしたインストーラーを実行し、画面の案内に従います。</span>
           </li>
           <li>
-            <strong>起動</strong>
-            <span>Cotaska.exe を実行します。</span>
+            <strong>プロジェクトを開く</strong>
+            <span>Cotaskaを起動し、新しいプロジェクトを作成するか既存プロジェクトを選択します。</span>
           </li>
         </ol>
       </section>
@@ -104,16 +104,16 @@
         </div>
         <div class="notes-grid">
           <article>
-            <h3>最新版のみ公開</h3>
-            <p>公開配布ファイルは /latest/ にある最新版だけを更新します。ダウンロードページのリンクは常に最新版を指します。</p>
+            <h3>リリース履歴</h3>
+            <p>GitHub Releasesで最新版と過去バージョンのリリースノート、配布ファイルを確認できます。</p>
           </article>
           <article>
             <h3>セキュリティ警告</h3>
             <p>初期公開版では、WindowsのSmartScreen警告が表示される場合があります。配布を広げる段階でコード署名を検討します。</p>
           </article>
           <article>
-            <h3>ファイル検証</h3>
-            <p>必要に応じてSHA256ファイルを使い、ダウンロードしたZIPのハッシュを確認できます。</p>
+            <h3>自動更新</h3>
+            <p>インストール後はCotaskaの更新機能から、確認付きで新しいバージョンを取得できます。</p>
           </article>
         </div>
       </section>
