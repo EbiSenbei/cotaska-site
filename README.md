@@ -10,6 +10,7 @@ Cotaska の公式サイトです。
 - `usage.html`: タスク管理とAIチャットの基本操作
 - `examples.html`: AIとタスクを進める4つの利用例
 - `download.html`: GitHub Releasesの最新版インストーラーを案内するダウンロードページ
+- `sitemap.xml`: Google Search Consoleへ送信する4ページのサイトマップ
 - `styles.css`: スタイル
 - `script.js`: モバイルメニュー、表示アニメーション、最新版取得
 - `assets/`: ロゴ、favicon、スクリーンショット、利用例の画像
