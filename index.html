@@ -1,256 +1,127 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Cotaskaは、人とAIが同じタスクのやり取りができる、ローカル完結型のWindows向けタスク管理アプリです。">
-    <meta property="og:title" content="Cotaska - 人とAIが同じタスクのやり取りができるタスク管理">
-    <meta property="og:description" content="AIに整理してもらう、AIへ作業を指示する、AIにタスクを追加してもらうためのローカル完結型タスク管理。">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ebisenbei.github.io/cotaska-site/">
-    <meta property="og:image" content="https://ebisenbei.github.io/cotaska-site/assets/ogp.png?v=4">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Cotaska - 人とAIが同じタスクのやり取りができるタスク管理">
-    <meta name="twitter:description" content="AIに整理してもらう、AIへ作業を指示する、AIにタスクを追加してもらうためのローカル完結型タスク管理。">
-    <meta name="twitter:image" content="https://ebisenbei.github.io/cotaska-site/assets/ogp.png?v=4">
-    <title>Cotaska - 人とAIが同じタスクのやり取りができるタスク管理</title>
-    <link rel="icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Cotaska">
-        <img src="assets/cotaska-logo.png" alt="Cotaska">
-      </a>
-      <nav class="nav" aria-label="メインナビゲーション">
-        <a href="#concept">コンセプト</a>
-        <a href="#features">特徴</a>
-        <a href="usage.html">使い方</a>
-        <a href="download.html">ダウンロード</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cotaskaは、タスク管理とAIチャットをひとつにつなぐWindows向けアプリです。タスク、Markdown、作業フォルダをAIと共有し、相談から作業依頼まで同じ画面で進められます。">
+  <meta property="og:title" content="Cotaska - タスク管理とAIチャットをひとつに">
+  <meta property="og:description" content="タスクを起点にAIへ相談し、ファイルを見ながら作業を依頼する。会話と作業記録を手元につなぐWindowsアプリ。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ebisenbei.github.io/cotaska-site/index.html">
+  <meta property="og:image" content="https://ebisenbei.github.io/cotaska-site/assets/ogp.png?v=4">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Cotaska - タスク管理とAIチャットをひとつの作業画面に</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="styles.css?v=20260926-examples">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Cotaska トップへ"><img src="assets/cotaska-logo.png" alt="Cotaska"></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">メニュー</button>
+    <nav id="main-nav" class="nav" aria-label="メインナビゲーション">
+      <a href="#possibilities">できること</a>
+      <a href="#ai-chat">AIチャット</a>
+      <a href="#tasks">タスク管理</a>
+      <a href="usage.html">使い方</a>
+      <a href="examples.html">利用例</a>
+      <a class="nav-cta" href="download.html">ダウンロード</a>
+    </nav>
+  </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero__copy">
-          <p class="eyebrow">Task manager for humans and AI agents</p>
-          <h1>人とAIが同じタスクのやり取りができる、ローカル完結型タスク管理</h1>
-          <p class="lead">
-            Cotaskaは、AIコーディングやAIエージェントとの作業で散らかりがちなタスクを、人とAIが同じ形で読めるようにするWindows向けタスク管理アプリです。
-            人は画面で整理し、AIはタスク情報を読んで次の作業を把握できます。
-          </p>
-          <div class="hero__actions" aria-label="主な操作">
-            <a class="button button--primary" href="download.html">Cotaskaをダウンロード</a>
-            <a class="button button--ghost" href="#concept">考え方を見る</a>
-          </div>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Task management with built-in AI chat</p>
+        <h1>タスク管理と<br><em>AIチャット</em>を、<br>ひとつの作業画面に。</h1>
+        <p class="lead">Cotaskaは、タスク、Markdown、作業フォルダとAIとの会話をつなぐWindows向けアプリです。やりたいことをタスクに残し、その文脈のままAIへ相談・整理・作業を依頼できます。</p>
+        <div class="actions">
+          <a class="button button-primary" href="download.html">Cotaskaをダウンロード <span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="usage.html#ai-setup">AIチャットの使い方</a>
         </div>
+        <div class="hero-notes" aria-label="製品情報">
+          <span>Windows 10 / 11</span><span>インストーラー</span><span>Local-first</span>
+        </div>
+      </div>
 
-        <div class="product-shot" aria-label="Cotaskaの画面イメージ">
-          <div class="window-bar">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="app-shell">
-            <aside class="rail">
-              <div class="rail__item active"></div>
-              <div class="rail__item"></div>
-              <div class="rail__item"></div>
-              <div class="rail__item"></div>
-            </aside>
-            <section class="side-pane">
-              <p class="pane-label">ビュー</p>
-              <button class="view active">今日</button>
-              <button class="view">明日</button>
-              <button class="view">次の7日間</button>
-              <p class="pane-label">リスト</p>
-              <button class="view">Cotaska</button>
-              <button class="view">仕様変更</button>
-            </section>
-            <section class="task-pane">
-              <div class="quick-add">やりたいことをタスクとして追加</div>
-              <article class="task done">
-                <span class="check"></span>
-                <div>
-                  <strong>AIに要件を整理してもらう</strong>
-                  <small>完了 / Cotaska</small>
-                </div>
-              </article>
-              <article class="task">
-                <span class="check"></span>
-                <div>
-                  <strong>このタスクから設計書を作ってもらう</strong>
-                  <small>進行中 / AI活用</small>
-                </div>
-              </article>
-              <article class="task">
-                <span class="check"></span>
-                <div>
-                  <strong>メール内容をタスクとして追加する</strong>
-                  <small>未着手 / 受信箱</small>
-                </div>
-              </article>
-            </section>
-            <section class="detail-pane">
-              <p class="pane-label">Markdownタスク</p>
-              <h2>AIも読める作業の前提</h2>
-              <p>目的、背景、次にやることをタスクとして残す。人が確認し、AIにも渡しやすい作業メモになります。</p>
-              <div class="metadata">
-                <span>status: doing</span>
-                <span>priority: medium</span>
-                <span>list: Cotaska</span>
-              </div>
-            </section>
-          </div>
+      <div class="ai-window reveal" aria-label="CotaskaのAIチャット画面イメージ">
+        <div class="window-top"><span class="window-title">Cotaska</span><span>—　□　×</span></div>
+        <div class="app-layout">
+          <aside class="app-rail"><b>C</b><span>✓</span><span>⌕</span><span class="selected">AI</span><span class="rail-bottom">⚙</span></aside>
+          <aside class="thread-pane">
+            <div class="pane-head"><strong>AIスレッド</strong><button aria-label="新しいスレッド">＋</button></div>
+            <div class="thread active"><span class="status-dot"></span><div><strong>サイト見直し案</strong><small>T-0293・いま</small></div></div>
+            <div class="thread"><span></span><div><strong>リリース手順の確認</strong><small>昨日</small></div></div>
+            <div class="thread"><span></span><div><strong>仕様書を整理する</strong><small>8月25日</small></div></div>
+            <div class="files-label">作業ファイル</div>
+            <div class="file">⌄　workspace</div><div class="file indent">◇　サイト見直し案.md</div><div class="file indent">◇　README.md</div>
+          </aside>
+          <section class="chat-pane">
+            <div class="chat-head"><div><strong>サイト見直し案</strong><small>Codex・作業中</small></div><span class="running">● 実行中</span></div>
+            <div class="messages">
+              <div class="message user">このタスクを読んで、サイト見直しの作業を分解してください。</div>
+              <div class="message ai"><span class="ai-mark">AI</span><div><strong>見直しを3段階に整理しました。</strong><ol><li>価値提案とコピーの更新</li><li>AIチャット画面の撮影</li><li>トップ・使い方・配布導線の更新</li></ol><div class="progress-line"><span></span> 関連ファイルを確認しました</div></div></div>
+            </div>
+            <div class="composer"><div class="attachment">◇ サイト見直し案.md　×</div><p>続けて依頼する…</p><div class="composer-foot"><span>＋　作業フォルダへ書き込み可</span><button aria-label="送信">↑</button></div></div>
+          </section>
+          <aside class="preview-pane"><div class="preview-head"><strong>タスク</strong><span>×</span></div><span class="task-id">T-0293</span><h3>紹介文とキャッチコピーを作る</h3><p class="muted">初見の人がCotaskaの用途と魅力をすぐ理解できる紹介文を用意する。</p><hr><small>進行状況</small><div class="tag">進行中</div><small>リスト</small><p>販売戦略</p></aside>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="concept" class="section concept">
-        <div class="section-heading">
-          <p class="eyebrow">Concept</p>
-          <h2>人とAIのやり取りを、同じタスクの上で進める。</h2>
-        </div>
-        <div class="concept__body">
-          <p>
-            やりたいことがまだあいまいな段階でも、人はCotaskaにタスクとして残しておけます。
-            そのタスクをAIに読ませれば、目的を整理したり、作業を分解したり、次にやることを具体化してもらえます。
-          </p>
-          <p>
-            具体化されたタスクは、そのままAIへの作業指示の元になります。
-            「このタスクを読んで設計書を作って」「このタスクから実装して」のように、人が見ているタスクを基準にしてAIへ依頼できます。
-          </p>
-          <p>
-            メールやOutlookなどから拾った情報も、AIに整理してもらい、Cotaskaのタスクとして追加できます。
-            やることを会話ログやメールの中に散らばらせず、タスクとして一元管理できます。
-          </p>
-        </div>
-      </section>
+    <section id="possibilities" class="section intro reveal">
+      <div class="intro-heading">
+        <p class="eyebrow"><span></span> One continuous workflow</p>
+        <h2>タスクを書いたら、<br>そこからAIとの作業を始められる。</h2>
+      </div>
+      <p>AIへ依頼するたびに、背景や目的を説明し直していませんか。Cotaskaなら、人が管理しているタスクをAIとの会話につなげられます。相談の結果も次のタスクも同じ場所で確認できるため、会話と実作業が分断されません。</p>
+    </section>
 
-      <section id="features" class="section feature-grid">
-        <article>
-          <span class="feature-number">01</span>
-          <h3>人とAIが同じタスクを読める</h3>
-          <p>人が画面で整理したタスクを、AIにも作業の前提として渡せます。説明し直す時間を減らし、同じ文脈で続きを進められます。</p>
-        </article>
-        <article>
-          <span class="feature-number">02</span>
-          <h3>AI作業の状態を見失わない</h3>
-          <p>依頼内容、分解した作業、次にやることをタスクとして残せます。会話ログだけに頼らず、作業状態を見返せます。</p>
-        </article>
-        <article>
-          <span class="feature-number">03</span>
-          <h3>UIで普段のタスク管理ができる</h3>
-          <p>今日、明日、次の7日間、リスト別の表示で日常のタスクを確認できます。AI用の仕組みでありながら、人も普通に使えます。</p>
-        </article>
-        <article>
-          <span class="feature-number">04</span>
-          <h3>Markdownとして手元に残る</h3>
-          <p>タスクはローカルのMarkdownとして残るため、あとから人が読み返しやすく、AIにも渡しやすい形になります。</p>
-        </article>
-      </section>
+    <section class="section value-grid">
+      <article class="value-card reveal"><span class="number">01</span><div class="mini-icon">◎</div><h3>タスクの文脈で<br>AIに相談</h3><p>曖昧なアイデアの整理、作業の分解、設計や実装の相談を、関連タスクを基準に始められます。</p></article>
+      <article class="value-card featured reveal"><span class="number">02</span><div class="mini-icon">⌘</div><h3>ファイルを見ながら<br>作業を依頼</h3><p>作業フォルダや参照ファイルを使い、必要な資料やコードをAIへ渡して依頼できます。</p></article>
+      <article class="value-card reveal"><span class="number">03</span><div class="mini-icon">↗</div><h3>会話と作業記録を<br>手元につなぐ</h3><p>AIスレッド、タスク、Markdown、ファイルを行き来しながら、作業の続きを見失いません。</p></article>
+    </section>
 
-      <section class="section screenshot-section">
-        <div class="section-heading">
-          <p class="eyebrow">Screen</p>
-          <h2>実際のタスクを、人もAIも読める形で残す。</h2>
-          <p>
-            Cotaskaでは、タスク一覧、状態、タグ、詳細メモ、関連サブタスクをひとつの作業画面で確認できます。
-            人は画面で状況を把握し、AIには同じタスク情報を読ませて、整理・設計・実装の指示に使えます。
-          </p>
+    <section id="ai-chat" class="dark-section">
+      <div class="section dark-inner">
+        <div class="split-heading reveal"><div><p class="eyebrow light"><span></span> AI workspace</p><h2>AIが別のツールではなく、<br>タスク管理の隣にいる。</h2></div><p>左側でスレッドや作業ファイルを選び、中央で依頼し、必要なタスクやファイルを右側で確認。作業の文脈を保ったままAIと進められます。</p></div>
+        <div class="capability-grid">
+          <article class="reveal"><span>01</span><h3>会話を継続できる</h3><p>AIスレッドと履歴を保存し、相談の続きを再開。使い終わった会話はアーカイブできます。</p></article>
+          <article class="reveal"><span>02</span><h3>作業の途中が見える</h3><p>AIの処理状況を画面で確認。別画面へ移動しても処理は継続し、完了時はWindows通知で知らせます。</p></article>
+          <article class="reveal"><span>03</span><h3>その場で内容を確認</h3><p>会話に出てきたタスク、Markdown、ファイルを右側のプレビューで開けます。</p></article>
+          <article class="reveal"><span>04</span><h3>実行方法を選べる</h3><p>参照ファイル、実行権限、既定モデルを設定し、AIへ渡す範囲を用途に合わせて調整できます。</p></article>
         </div>
-        <figure class="screenshot-frame">
-          <img src="assets/cotaska-screen.png" alt="Cotaskaのタスク一覧と詳細画面">
-        </figure>
-      </section>
+      </div>
+    </section>
 
-      <section id="agents" class="section agent-section">
-        <div class="agent-copy">
-          <p class="eyebrow">Human and AI workflow</p>
-          <h2>整理、指示、追加を、同じタスクから始める。</h2>
-          <p>
-            Cotaskaは、人が整理する場所であり、AIに整理・実行・追加を頼むための共通のタスク置き場です。
-            あいまいなやりたいことをタスクにし、AIに分解してもらい、そのタスクを元に設計や実装を依頼できます。
-          </p>
-        </div>
-        <div class="agent-flow" aria-label="CotaskaのAI活用フロー">
-          <div class="flow-card">
-            <span>Organize</span>
-            <strong>AIに整理してもらう</strong>
-            <p>やりたいことをタスクに残し、目的、背景、作業単位をAIに具体化してもらいます。</p>
-          </div>
-          <div class="flow-line"></div>
-          <div class="flow-card flow-card--dark">
-            <span>Request</span>
-            <strong>AIへの指示元にする</strong>
-            <p>「このタスクファイルを読んで設計書を作って」のように、同じタスクを作業指示に使えます。</p>
-          </div>
-          <div class="flow-line"></div>
-          <div class="flow-card">
-            <span>Add</span>
-            <strong>AIにタスクを追加してもらう</strong>
-            <p>メールなどの情報をAIに整理してもらい、Cotaskaのタスクとして管理できます。</p>
-          </div>
-        </div>
-      </section>
+    <section class="section workflow">
+      <div class="section-heading reveal"><p class="eyebrow"><span></span> Workflow</p><h2>思いつきから実作業まで、<br>4つのステップでつなぐ。</h2></div>
+      <ol class="workflow-list">
+        <li class="reveal"><span>01</span><div><strong>タスクに残す</strong><p>やりたいことや困っていることを、まずタスクとして登録します。</p></div></li>
+        <li class="reveal"><span>02</span><div><strong>AIに相談する</strong><p>タスクを基準に、目的の整理や作業の分解を依頼します。</p></div></li>
+        <li class="reveal"><span>03</span><div><strong>ファイルを参照して頼む</strong><p>必要な資料を添付し、設計、実装、文書作成などを依頼します。</p></div></li>
+        <li class="reveal"><span>04</span><div><strong>タスクで続きを管理</strong><p>結果を確認し、残った作業や次の依頼をタスクとして追跡します。</p></div></li>
+      </ol>
+    </section>
 
-      <section class="section data-model">
-        <div class="section-heading">
-          <p class="eyebrow">Local Markdown</p>
-          <h2>作業の流れを、AIにも渡しやすい形で手元に残す。</h2>
-        </div>
-        <pre><code>data/
+    <section id="tasks" class="section task-section">
+      <div class="task-copy reveal"><p class="eyebrow"><span></span> Task management</p><h2>AIを使わない時間も、普通のタスク管理として使いやすく。</h2><p>今日、明日、次の7日間、リスト、タグ、サブタスクで日々の作業を整理。背景やメモはMarkdownで残せるため、人が読みやすく、必要なときはAIにも共有できます。</p><ul class="check-list"><li>今日・明日・次の7日間</li><li>リスト・タグ・サブタスク</li><li>Markdown形式の詳細メモ</li></ul></div>
+      <figure class="screen-card reveal"><img src="assets/cotaska-screen.png" alt="Cotaskaのタスク管理画面"><figcaption>タスク一覧と詳細を、ひとつの画面で確認</figcaption></figure>
+    </section>
+
+    <section class="local-section">
+      <div class="section local-inner reveal"><div><p class="eyebrow"><span></span> Local-first data</p><h2>タスクは、手元の<br>Markdownとして残る。</h2></div><div><p>タスクの正本はローカルフォルダのMarkdownファイルです。Cotaskaだけでなく、エディタやGitからも確認できます。AIチャットの履歴もローカルに保存されます。</p><pre><code>data/
   tasks/
     T-0001.md
     T-0002.md
-    _index.yaml
-  archive/
-  lists.yaml</code></pre>
-      </section>
+  ai.sqlite
+  lists.yaml</code></pre><p class="notice">AIチャットの利用時には、選択したAIサービスとの通信が発生します。CotaskaはOpenAI APIキー、Codexのアクセストークン、認証ファイルの内容を保存しません。</p></div></div>
+    </section>
 
-      <section class="section comparison">
-        <div class="section-heading">
-          <p class="eyebrow">Positioning</p>
-          <h2>UIで使えて、Markdownで残り、AIにも渡せる。</h2>
-        </div>
-        <div class="comparison-grid">
-          <div>
-            <h3>一般的なタスク管理</h3>
-            <p>日々のタスク整理には便利です。ただ、AIに作業の続きを頼むとき、アプリ内の状態をそのまま共有しにくいことがあります。</p>
-          </div>
-          <div>
-            <h3>Markdownメモ</h3>
-            <p>AIに渡しやすく、自由に書けます。ただ、タスクの一覧、状態、期限、完了管理を日常的に回すには手間がかかります。</p>
-          </div>
-          <div>
-            <h3>Cotaska</h3>
-            <p>人は画面でタスクを整理し、AIは同じタスク情報を読めます。UIで使えるタスク管理と、Markdownとして残る作業記録を両立します。</p>
-          </div>
-        </div>
-      </section>
+    <section class="section final-cta reveal"><p class="eyebrow"><span></span> Start with your next task</p><h2>次のタスクから、<br>AIとの作業を始めよう。</h2><p>Windows向けインストーラーをGitHub Releasesで公開しています。画面の案内に従ってインストールできます。</p><div class="actions centered"><a class="button button-primary" href="download.html">Cotaskaをダウンロード <span>→</span></a><a class="button button-secondary" href="usage.html">導入と使い方を見る</a></div></section>
+  </main>
 
-      <section id="download" class="section download">
-        <div>
-          <p class="eyebrow">Release</p>
-          <h2>Windows向けインストール版を公開中</h2>
-          <p>
-            Windows向けインストーラーをGitHub Releasesから取得して使い始められます。
-            最新版の確認と過去バージョンのリリースノートも同じページで確認できます。
-          </p>
-        </div>
-        <div class="download__actions">
-          <a class="button button--ghost" href="usage.html">使い方を見る</a>
-          <a class="button button--primary" href="download.html">ダウンロードページへ</a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>Cotaska</p>
-      <a href="#top">ページ上部へ</a>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+  <footer class="site-footer"><img src="assets/cotaska-logo.png" alt="Cotaska"><p>タスク管理とAIチャットを、ひとつに。</p><a href="#top">ページ上部へ ↑</a></footer>
+  <script src="script.js"></script>
+</body>
 </html>

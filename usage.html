@@ -1,221 +1,30 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Cotaskaの使い方。AIにタスクを整理してもらう、AIへの作業指示に使う、メールからタスクを追加してもらう流れを紹介します。">
-    <meta property="og:title" content="Cotaska 使い方">
-    <meta property="og:description" content="人とAIが同じタスクを見ながら作業を進めるためのCotaska活用例。">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ebisenbei.github.io/cotaska-site/usage.html">
-    <meta property="og:image" content="https://ebisenbei.github.io/cotaska-site/assets/ogp.png?v=4">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Cotaska 使い方">
-    <meta name="twitter:description" content="人とAIが同じタスクを見ながら作業を進めるためのCotaska活用例。">
-    <meta name="twitter:image" content="https://ebisenbei.github.io/cotaska-site/assets/ogp.png?v=4">
-    <title>Cotaska 使い方</title>
-    <link rel="icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Cotaska">
-        <img src="assets/cotaska-logo.png" alt="Cotaska">
-      </a>
-      <nav class="nav" aria-label="メインナビゲーション">
-        <a href="index.html#concept">コンセプト</a>
-        <a href="index.html#features">特徴</a>
-        <a href="usage.html">使い方</a>
-        <a href="download.html">ダウンロード</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cotaskaの基本的なタスク管理とAIチャットの始め方を説明します。">
+  <meta property="og:title" content="Cotaskaの使い方 - タスク管理とAIチャット">
+  <meta property="og:description" content="Cotaskaの基本的なタスク管理とAIチャットの始め方を説明します。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ebisenbei.github.io/cotaska-site/usage.html">
+  <meta property="og:image" content="https://ebisenbei.github.io/cotaska-site/assets/ogp.png?v=4">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Cotaskaの使い方 - タスク管理とAIチャット</title>
+  <link rel="icon" href="assets/favicon.ico"><link rel="stylesheet" href="styles.css?v=20260926-examples">
+</head>
+<body id="top">
+  <header class="site-header"><a class="brand" href="index.html"><img src="assets/cotaska-logo.png" alt="Cotaska"></a><button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">メニュー</button><nav id="main-nav" class="nav"><a href="index.html#possibilities">できること</a><a href="index.html#ai-chat">AIチャット</a><a href="index.html#tasks">タスク管理</a><a class="active" aria-current="page" href="usage.html">使い方</a><a href="examples.html">利用例</a><a class="nav-cta" href="download.html">ダウンロード</a></nav></header>
+  <main>
+    <section class="page-hero"><p class="eyebrow"><span></span> Getting started</p><h1>まずはタスクをひとつ。<br>次に、そのままAIへ相談。</h1><p class="lead">通常のタスク管理だけなら、起動してすぐに使えます。AIチャットを使う場合は、最初に連携先と作業フォルダを設定します。</p><div class="jump-links"><a href="#task-start">タスク管理を始める</a><a href="#ai-setup">AIチャットを始める</a></div></section>
 
-    <main>
-      <section class="section usage-hero">
-        <div class="section-heading">
-          <p class="eyebrow">Usage</p>
-          <h1>Cotaskaを、AIとの作業の共通タスクにする。</h1>
-          <p class="lead">
-            Cotaskaは、やりたいことをタスクとして残し、AIに整理・分解・実行・追加を頼むための作業場所です。
-            人が見ているタスクを基準に、AIへ次の作業を依頼できます。
-          </p>
-        </div>
-      </section>
+    <section id="task-start" class="section guide-section"><div class="section-heading"><p class="eyebrow"><span></span> Basic tasks</p><h2>タスク管理を始める</h2></div><div class="guide-grid"><article><span>01</span><h3>タスクを追加</h3><p>クイック追加欄へ、いま気になっていることを書きます。最初から詳しく書く必要はありません。</p></article><article><span>02</span><h3>詳細を残す</h3><p>目的、背景、完了条件をMarkdownで追記します。期限やタグ、リストも必要に応じて設定します。</p></article><article><span>03</span><h3>今日の作業を確認</h3><p>今日、明日、次の7日間やリスト別表示を使って、取り組むタスクを絞ります。</p></article></div></section>
 
-      <section class="section usage-flow">
-        <article class="usage-step">
-          <span class="feature-number">01</span>
-          <div>
-            <p class="eyebrow">Organize</p>
-            <h2>あいまいなやりたいことを、AIに整理してもらう。</h2>
-            <p>
-              まだ具体化できていないアイデアや作業を、まずCotaskaにタスクとして残します。
-              そのタスクをAIに読ませることで、目的、背景、必要な作業、確認事項を整理してもらえます。
-            </p>
-            <figure class="usage-image">
-              <img src="assets/usage-organize.png" alt="あいまいな依頼をAIが整理してCotaskaのタスクへ分解するイメージ">
-            </figure>
-            <div class="usage-visual usage-visual--organize" aria-label="あいまいな作業をAIに整理してもらうイメージ">
-              <div class="visual-card visual-card--note">
-                <span>Human</span>
-                <strong>ざっくりした依頼</strong>
-                <p>やりたいことだけを書く</p>
-              </div>
-              <div class="visual-arrow"></div>
-              <div class="visual-card visual-card--task">
-                <span>Cotaska</span>
-                <strong>タスク化</strong>
-                <p>目的・背景・状態を残す</p>
-              </div>
-              <div class="visual-arrow"></div>
-              <div class="visual-card visual-card--ai">
-                <span>AI</span>
-                <strong>具体化・分解</strong>
-                <p>作業単位に整える</p>
-              </div>
-            </div>
-          </div>
-        </article>
+    <section id="ai-setup" class="dark-section"><div class="section guide-dark"><div class="section-heading"><p class="eyebrow light"><span></span> AI setup</p><h2>AIチャットを始める</h2><p>AIサービス側の利用環境と認証が必要です。Cotaskaに認証情報そのものを入力するのではなく、設定画面から利用可能な状態かを確認します。</p></div><ol class="setup-list"><li><b>1</b><div><strong>設定を開く</strong><p>サイドバー下部の設定から「AI共通」を開きます。</p></div></li><li><b>2</b><div><strong>連携先と作業フォルダを選ぶ</strong><p>AI連携先を選び、AIに作業してほしいフォルダを指定します。</p></div></li><li><b>3</b><div><strong>認証状態を確認する</strong><p>認証状態確認を実行し、選択したAIを利用できることを確認します。</p></div></li><li><b>4</b><div><strong>AIスレッドを作る</strong><p>サイドバーのAIから新しいスレッドを作り、必要ならタスクを関連付けます。</p></div></li><li><b>5</b><div><strong>参照範囲と権限を確認して送信</strong><p>参照ファイルと実行権限を確認し、メッセージを送信します。</p></div></li></ol></div></section>
 
-        <article class="usage-step">
-          <span class="feature-number">02</span>
-          <div>
-            <p class="eyebrow">Request</p>
-            <h2>整理されたタスクを、AIへの作業指示に使う。</h2>
-            <p>
-              AIに整理してもらったタスクは、そのまま次の作業指示の元ネタになります。
-              人が見ているタスクと同じ情報をAIに渡せるため、設計書作成や実装依頼の前提をそろえやすくなります。
-            </p>
-            <figure class="usage-image">
-              <img src="assets/usage-request.png" alt="CotaskaのタスクをAIへの設計や実装の指示に使うイメージ">
-            </figure>
-            <div class="usage-visual usage-visual--request" aria-label="タスクをAIへの作業指示に使うイメージ">
-              <div class="visual-card visual-card--task">
-                <span>Cotaska</span>
-                <strong>整理済みタスク</strong>
-                <p>要件・完了条件・メモ</p>
-              </div>
-              <div class="visual-arrow"></div>
-              <div class="visual-card visual-card--ai">
-                <span>AI</span>
-                <strong>設計・実装</strong>
-                <p>同じ前提で作業する</p>
-              </div>
-              <div class="visual-arrow"></div>
-              <div class="visual-card visual-card--result">
-                <span>Result</span>
-                <strong>成果物</strong>
-                <p>設計書・実装・確認結果</p>
-              </div>
-            </div>
-          </div>
-        </article>
+    <section class="section guide-section"><div class="section-heading"><p class="eyebrow"><span></span> Daily workflow</p><h2>会話を、実際の作業につなげる</h2></div><div class="operation-list"><article><span>01</span><div><h3>タスクから相談する</h3><p>「このタスクの目的を整理して」「完了までの作業を分解して」のように依頼します。</p></div></article><article><span>02</span><div><h3>必要なファイルを添付する</h3><p>入力欄の追加ボタンから参照ファイルを選びます。送信前に不要な添付を外せます。</p></div></article><article><span>03</span><div><h3>途中経過を確認する</h3><p>AIの処理状況はチャットに表示されます。別画面へ移動しても処理は継続します。</p></div></article><article><span>04</span><div><h3>タスクやファイルを開く</h3><p>会話内のタスクIDやファイルリンクから、右側のプレビューで内容を確認できます。</p></div></article><article><span>05</span><div><h3>続きを管理する</h3><p>同じスレッドで相談を続け、完了した会話はアーカイブ。未読ランプやWindows通知で返信を見逃しません。</p></div></article></div></section>
 
-        <article class="usage-step">
-          <span class="feature-number">03</span>
-          <div>
-            <p class="eyebrow">Add</p>
-            <h2>メールやOutlookの内容を、AIにタスク化してもらう。</h2>
-            <p>
-              メール、Outlook、メモなどに散らばった依頼や予定を、AIに整理してもらい、Cotaskaのタスクとして追加できます。
-              やることを会話ログやメールの中に埋もれさせず、タスクとして一元管理できます。
-            </p>
-            <figure class="usage-image">
-              <img src="assets/usage-add.png" alt="メールやOutlookの内容をAIが整理してCotaskaのタスクへ追加するイメージ">
-            </figure>
-            <div class="usage-visual usage-visual--add" aria-label="メールなどの内容をAIにタスク化してもらうイメージ">
-              <div class="visual-card visual-card--mail">
-                <span>Mail</span>
-                <strong>依頼・予定</strong>
-                <p>メールやOutlookの情報</p>
-              </div>
-              <div class="visual-arrow"></div>
-              <div class="visual-card visual-card--ai">
-                <span>AI</span>
-                <strong>抽出・整理</strong>
-                <p>対応が必要なことを選ぶ</p>
-              </div>
-              <div class="visual-arrow"></div>
-              <div class="visual-card visual-card--task">
-                <span>Cotaska</span>
-                <strong>タスク追加</strong>
-                <p>期限や優先度も候補化</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="usage-step">
-          <span class="feature-number">04</span>
-          <div>
-            <p class="eyebrow">Expand</p>
-            <h2>タスク化した内容を、ほかの場所へ展開する。</h2>
-            <p>
-              Cotaskaにタスクとして残した内容は、AIに整理してもらうことで、Obsidianのメモ、Gitの作業ログ、設計メモなどへ展開しやすくなります。
-              これはCotaska単体の直接連携ではなく、AIに渡しやすいタスク情報として残しておくことで広がる使い方です。
-            </p>
-            <figure class="usage-image">
-              <img src="assets/usage-expand.png" alt="Cotaskaのタスク内容をAIが整理して外部のメモや作業ログへ展開するイメージ">
-            </figure>
-            <div class="usage-visual usage-visual--expand" aria-label="タスク化した内容をほかの場所へ展開するイメージ">
-              <div class="visual-card visual-card--task">
-                <span>Cotaska</span>
-                <strong>作業の正本</strong>
-                <p>タスクとして残す</p>
-              </div>
-              <div class="visual-arrow"></div>
-              <div class="visual-card visual-card--ai">
-                <span>AI</span>
-                <strong>用途別に整理</strong>
-                <p>メモやログ向けに変換</p>
-              </div>
-              <div class="visual-arrow"></div>
-              <div class="visual-card visual-card--external">
-                <span>External</span>
-                <strong>ほかの場所へ</strong>
-                <p>Obsidian・Git・設計メモ</p>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <section class="section usage-summary">
-        <div class="section-heading">
-          <p class="eyebrow">Workflow</p>
-          <h2>タスクを中心に、AIとの作業をつなげる。</h2>
-        </div>
-        <div class="summary-grid">
-          <article>
-            <h3>人が残す</h3>
-            <p>やりたいこと、困っていること、受け取った依頼をタスクとして残します。</p>
-          </article>
-          <article>
-            <h3>AIが整理する</h3>
-            <p>タスクを読み、目的、作業単位、確認事項、次の行動に分解します。</p>
-          </article>
-          <article>
-            <h3>人とAIで進める</h3>
-            <p>同じタスクを見ながら、設計、実装、確認、記録へ進めます。</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section download">
-        <div>
-          <p class="eyebrow">Try Cotaska</p>
-          <h2>最新版をインストールして試せます。</h2>
-          <p>Windows向けインストーラーをGitHub Releasesから取得し、画面の案内に従ってインストールできます。</p>
-        </div>
-        <a class="button button--primary" href="download.html">ダウンロードページへ</a>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>Cotaska</p>
-      <a href="index.html">トップへ戻る</a>
-    </footer>
-  </body>
-</html>
+    <section class="section caution"><h2>送信前に確認してください</h2><div class="caution-grid"><article><h3>参照ファイル</h3><p>AIへ送る必要があるファイルだけを選び、機密情報が含まれていないか確認してください。</p></article><article><h3>実行権限</h3><p>閲覧だけか、作業フォルダへの書き込みを許可するかを、依頼内容に合わせて選びます。</p></article><article><h3>外部通信</h3><p>AIチャット利用時は、入力内容や選択した参照情報が連携先AIサービスへ送信されます。</p></article></div></section>
+    <section class="section final-cta"><h2>準備ができたら、<br>最初のタスクを作りましょう。</h2><div class="actions centered"><a class="button button-primary" href="download.html">ダウンロードへ <span>→</span></a><a class="button button-secondary" href="index.html">トップへ戻る</a></div></section>
+  </main>
+  <footer class="site-footer"><img src="assets/cotaska-logo.png" alt="Cotaska"><p>タスク管理とAIチャットを、ひとつに。</p><a href="#top">ページ上部へ ↑</a></footer><script src="script.js"></script>
+</body></html>
