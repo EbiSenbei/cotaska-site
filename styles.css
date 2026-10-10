@@ -48,4 +48,9 @@ h1,h2,h3{text-wrap:balance;word-break:auto-phrase}.heading-line{display:block}.n
 .button:active{transform:scale(.97)}
 @media(hover:hover) and (pointer:fine){.button:hover{transform:translateY(-2px)}}
 .lead{overflow-wrap:anywhere}
+.download-verification a{text-decoration:underline;text-underline-offset:3px}
+.download-verification code{overflow-wrap:anywhere}
+.download-verification details{margin-top:18px}
+.download-verification summary{cursor:pointer;font-weight:700}
+.download-verification pre{max-width:100%;padding:16px;border-radius:8px;background:#fff;overflow-x:auto}
 @media(max-width:580px){.release-card dl div{display:grid;grid-template-columns:1fr;gap:2px}.release-card dd{text-align:left}}
