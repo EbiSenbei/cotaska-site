@@ -10,12 +10,25 @@
   <meta property="og:image" content="https://ebisenbei.github.io/cotaska-site/assets/ogp.png?v=4">
   <meta name="twitter:card" content="summary_large_image">
   <title>Cotaskaの使い方 - タスク管理とAIチャット</title>
-  <link rel="icon" href="assets/favicon.ico"><link rel="stylesheet" href="styles.css?v=20260926-orange">
+  <link rel="icon" href="assets/favicon.ico"><link rel="stylesheet" href="styles.css?v=20261025-t0295">
 </head>
 <body id="top">
   <header class="site-header"><a class="brand" href="index.html"><img src="assets/cotaska-logo.png" alt="Cotaska"></a><button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">メニュー</button><nav id="main-nav" class="nav"><a href="index.html#possibilities">できること</a><a href="index.html#ai-chat">AIチャット</a><a href="index.html#tasks">タスク管理</a><a class="active" aria-current="page" href="usage.html">使い方</a><a href="examples.html">利用例</a><a class="nav-cta" href="download.html">ダウンロード</a></nav></header>
   <main>
-    <section class="page-hero"><p class="eyebrow"><span></span> Getting started</p><h1>まずはタスクをひとつ。<br>次に、そのままAIへ相談。</h1><p class="lead">通常のタスク管理だけなら、起動してすぐに使えます。AIチャットを使う場合は、最初に連携先と作業フォルダを設定します。</p><div class="jump-links"><a href="#task-start">タスク管理を始める</a><a href="#ai-setup">AIチャットを始める</a></div></section>
+    <section class="page-hero"><p class="eyebrow"><span></span> Getting started</p><h1>まずはタスクをひとつ。<br>次に、そのままAIへ相談。</h1><p class="lead">初回は保存先のプロジェクトを作成してから、タスクを1件登録します。通常のタスク管理にAIの設定は不要です。AIチャットを使う場合は、最初に連携先と作業フォルダを設定します。</p><div class="jump-links"><a href="#first-task">最初のタスクを登録する</a><a href="#task-start">タスク管理を始める</a><a href="#ai-setup">AIチャットを始める</a></div></section>
+
+
+    <section id="first-task" class="section guide-section">
+      <div class="section-heading"><p class="eyebrow"><span></span> Your first task</p><h2>インストールから、最初の1件まで。</h2><p>タスク管理はAIの契約・認証なしで始められます。保存先には専用の空フォルダを使ってください。</p></div>
+      <ol class="first-task-list">
+        <li><strong>最新版のEXEを取得してインストール</strong><p><a href="download.html">ダウンロードページ</a>から取得し、インストーラーの案内に従います。</p></li>
+        <li><strong>Cotaskaを起動し、プロジェクトを作成</strong><p>スタートメニューから起動。「プロジェクトを選択」画面で「新しいプロジェクトを作成」を選び、書き込みできる専用の空フォルダ（例：ドキュメント内のCotaska用フォルダ）を指定します。「既存プロジェクトを開く」は、すでにCotaskaの <code>project.yaml</code> があるフォルダ向けです。</p></li>
+        <li><strong>「すべて」でタスク名を入力してEnter</strong><p>クイック追加欄「タスクを追加」に <code>最初のタスクを登録する</code> と入力し、Enterまたは「登録」を押します。日付を設定しない最初の1件は「今日」ではなく「すべて」で確認できます。</p></li>
+        <li><strong>詳細に目的と完了条件を残す</strong><p>登録したタスクを選び、「メモを入力...」欄へ「目的：Cotaskaの基本操作を試す」「完了条件：タスクを1件登録できた」と記入します。プレビュー表示中なら「編集モードへ切替」を選びます。本文は自動保存されます。入力後は少し待ち、別タスクへ切り替えて戻ったときも内容が残るか確認します。</p></li>
+        <li><strong>保存先を確認する</strong><p>選んだプロジェクトの <code>tasks</code> フォルダに、タスクID別フォルダとMarkdownファイル（例：<code>tasks/T-0001/T-0001.md</code>）が作られます。既存のプロジェクトではIDが異なります。ここまででタスク管理を始められます。</p></li>
+      </ol>
+      <div class="info-box"><strong>プロジェクトのデータは手元のフォルダに保存されます</strong><p>インストール先と保存先は別です。初回ガイドは必要に応じて確認してください。AIチャットはタスクを登録した後で設定できます。</p></div>
+    </section>
 
     <section id="task-start" class="section guide-section"><div class="section-heading"><p class="eyebrow"><span></span> Basic tasks</p><h2>タスク管理を始める</h2></div><div class="guide-grid"><article><span>01</span><h3>タスクを追加</h3><p>クイック追加欄へ、いま気になっていることを書きます。最初から詳しく書く必要はありません。</p></article><article><span>02</span><h3>詳細を残す</h3><p>目的、背景、完了条件をMarkdownで追記します。期限やタグ、リストも必要に応じて設定します。</p></article><article><span>03</span><h3>今日の作業を確認</h3><p>今日、明日、次の7日間やリスト別表示を使って、取り組むタスクを絞ります。</p></article></div></section>
 
@@ -28,5 +41,5 @@
     <section class="section caution"><h2>送信前に確認してください</h2><div class="caution-grid"><article><h3>参照ファイル</h3><p>AIへ送る必要があるファイルだけを選び、機密情報が含まれていないか確認してください。</p></article><article><h3>実行権限</h3><p>閲覧だけか、作業フォルダへの書き込みを許可するかを、依頼内容に合わせて選びます。</p></article><article><h3>外部通信</h3><p>AIチャット利用時は、入力内容や選択した参照情報が連携先AIサービスへ送信されます。</p></article></div></section>
     <section class="section final-cta"><h2>準備ができたら、<br>最初のタスクを作りましょう。</h2><div class="actions centered"><a class="button button-primary" href="download.html">ダウンロードへ <span>→</span></a><a class="button button-secondary" href="index.html">トップへ戻る</a></div></section>
   </main>
-  <footer class="site-footer"><img src="assets/cotaska-logo.png" alt="Cotaska"><p>タスク管理とAIチャットを、ひとつに。</p><a href="#top">ページ上部へ ↑</a></footer><script src="script.js?v=20260926-t0647"></script>
+  <footer class="site-footer"><img src="assets/cotaska-logo.png" alt="Cotaska"><p>タスク管理とAIチャットを、ひとつに。</p><div class="footer-links"><a href="usage.html#first-task">初回手順</a><a href="https://github.com/EbiSenbei/cotaska-site/releases">更新履歴</a><a href="index.html#support">問い合わせ</a><a href="#top">ページ上部へ ↑</a></div></footer><script src="script.js?v=20261025-t0295"></script>
 </body></html>

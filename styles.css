@@ -54,3 +54,20 @@ h1,h2,h3{text-wrap:balance;word-break:auto-phrase}.heading-line{display:block}.n
 .download-verification summary{cursor:pointer;font-weight:700}
 .download-verification pre{max-width:100%;padding:16px;border-radius:8px;background:#fff;overflow-x:auto}
 @media(max-width:580px){.release-card dl div{display:grid;grid-template-columns:1fr;gap:2px}.release-card dd{text-align:left}}
+
+/* T-0295: 紹介素材と最初のタスクまでの導線 */
+.intro-media{border-bottom:1px solid var(--line)}
+.intro-media video{display:block;width:100%;height:auto;margin-top:30px;border-radius:12px;background:var(--brand-deep);box-shadow:var(--shadow)}
+.media-caption{color:var(--muted);font-size:13px;margin-top:14px;overflow-wrap:anywhere}
+.media-caption a,.first-task-list a,.install-list a{text-decoration:underline;text-underline-offset:3px}
+.intro-overview{margin:42px 0 0}.intro-overview img{display:block;width:100%;border:1px solid var(--line);border-radius:12px}.intro-overview figcaption{color:var(--muted);font-size:13px;margin-top:10px}
+.support-section{border-top:1px solid var(--line)}
+.download-status{padding-top:0;padding-bottom:40px}.download-status code,.first-task-list code{overflow-wrap:anywhere}
+.first-task-list{padding-left:26px;max-width:900px}.first-task-list li{padding:14px 0 18px 12px;border-bottom:1px solid var(--line)}.first-task-list strong{font-size:20px}.first-task-list p{margin:8px 0 0;color:var(--muted)}
+.footer-links{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.release-card dt{flex-shrink:0}.release-card dd{min-width:0}
+.split-heading>div{min-width:0}
+.intro-overview img,.screen-card img{height:auto}
+@media(max-width:820px){.split-heading{grid-template-columns:1fr;gap:28px}}
+@media(max-width:360px){.split-heading h2{font-size:30px}}
+@media(max-width:580px){.selected-shot{height:auto}.selected-shot img{width:100%;max-width:100%;transform:none}.footer-links{justify-content:center}.intro-media video,.intro-overview img{border-radius:8px}.first-task-list strong{font-size:18px}.install-list a{color:inherit}}
